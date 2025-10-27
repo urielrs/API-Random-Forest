@@ -1,6 +1,8 @@
 # results/views.py
 
 import json
+import os
+from django.conf import settings
 from pathlib import Path
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -8,7 +10,7 @@ from rest_framework import status
 
 # Ruta del archivo de resultados. Asegúrate que esta ruta es correcta
 # (Debe ser relativa a la carpeta superior de 'results')
-RESULTS_FILE_PATH = Path(__file__).resolve().parent.parent / 'results_data' / 'final_model_results.json'
+RESULTS_FILE_PATH = os.path.join(settings.BASE_DIR, 'MalwareProject', 'final_model_results.json')
 
 class ResultsAPIView(APIView):
     """
