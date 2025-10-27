@@ -1,0 +1,3 @@
+# Contenido de runtime.txt
+python-3.12.4
+# Usa la versión que tengas, asegúrate de que sea 3.x
