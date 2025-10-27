@@ -1,6 +1,6 @@
 // app.js (FINAL SIN GRÁFICO)
 
-const API_URL = 'http://127.0.0.1:8000/api/model-results/'; 
+const API_URL = '/api/model-results/'; 
 
 document.addEventListener('DOMContentLoaded', fetchResults);
 
